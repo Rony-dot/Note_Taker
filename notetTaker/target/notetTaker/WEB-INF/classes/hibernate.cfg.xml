@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:postgresql://ec2-52-72-221-20.compute-1.amazonaws.com:5432/d1bs9jkdt9l9i</property>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+    <property name="connection.username">xjpzahueumqpqt</property>
+    <property name="connection.password">363cd98871e4af33dd8cadb469831f9787e17606452f5f401368acdbb664c6ad</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
+    <!-- DB schema will be updated if needed -->
+     <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="show_sql">true</property>
+    <property name="format_sql">true</property>
+    <mapping class="bd.edu.seu.entities.Note"/>
+  </session-factory>
+</hibernate-configuration>
